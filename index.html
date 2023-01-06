@@ -1,0 +1,13 @@
+<script type="module">
+import * as eg from "https://js.sabae.cc/egvr.js";
+
+for (let i = 0; i < 200; i++) {
+  const th = i / 3;
+  const r = 2 - i / 100 * 2;
+  const x = Math.cos(th) * r;
+  const y = Math.sin(th) * r;
+  const s = r / 4;
+  eg.sphere(x, i / 30, y, s, eg.rgb(i * 2, 0, 30));
+  //eg.sphere(x, i / 30, y, s, `hsl(30, .5, .1)`);
+}
+</script>
